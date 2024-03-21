@@ -2,3 +2,6 @@
 
 * [megatera-gitbook](README.md)
 * [사전과제 테스트-페이지 추가](undefined.md)
+* [1주차](/1주차/README.md)
+  * [HTTP의 이해](/1주차/HTTP의이해.md)
+  * [HTTP Client](/1주차/HTTPClient.md)
