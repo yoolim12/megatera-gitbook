@@ -11,7 +11,7 @@
   - https://ics.uci.edu/~fielding/pubs/dissertation/rest_arch_style.htm
   - https://m.blog.naver.com/aservmz/222234406469
 
-- REST : 소프트웨어 아키텍처 + 제약조건
+  - REST : 소프트웨어 아키텍처 + 제약조건
 
 - 제약조건
   1. NULL 스타일로 시작 : REST를 시작하기 위한 시작 조건. 설계자는 아무 것도 없는 상태에서 설계를 시작해서, 제약조건을 점점 추가해나가는 것
@@ -20,8 +20,14 @@
       - 관심사의 분리(사용자에 대한 관심사 - 데이터에 대한 관심사)
       - 클라이언트, 서버 각각이 독립적으로 발전할 수 있도록 함
 
-  3. Client-Stateless-Server(Section 3.4.3 - https://ics.uci.edu/~fielding/pubs/dissertation/net_arch_styles.htm#sec_3_4_3)
+  3. Client-"Stateless"-Server(Section 3.4.3 - https://ics.uci.edu/~fielding/pubs/dissertation/net_arch_styles.htm#sec_3_4_3)
      - 서버에는 세션 상태를 저장 불가, 클라이언트에만 저장해야함.
      - 클라이언트에서 서버로 요청을 보낼 때, 요청을 이해할 수 있는 모든 정보를 포함해야하며, 서버에 저장된 정보를 사용할 수 없다.
      - 단점 : 서버에 있는 데이터를 클라이언트에 저장할 수 없기에, 반복적인 데이터가 발생 -> 네트워크 수행 능력이 떨어짐
-  4. s
+
+  4. Client-"Cache"-Stateless-Server(Section 3.4.4 - https://ics.uci.edu/~fielding/pubs/dissertation/net_arch_styles.htm#sec_3_4_4)
+      - 캐시는 요청에 대한 응답이 "cacheable" 이라는 가정 하에, 이후에 들어오는 요청에 대한 응답이 이전에 왔던 요청에 대한 응답과 비슷할 경우, 응답을 재사용할 수 있도록 해준다.
+      - 쉽게 말해, 클라이언트와 서버 사이의 중개자 역할을 한다.
+      - 단점 : 캐시에 있는 이전 데이터(이전 응답)가 현재 서버에 보냈다면 나올 응답과 다른 경우가 생길 수 있음 -> 신뢰도 하락
+
+  5. dd
