@@ -8,7 +8,7 @@
 ## Socket
 ### Socket vs Socket API
 - Socket : 프로세스 간 통신의 종착점. 서버에서의 end point, 클라이언트에서의 end point가 연결이 되는 것. 이 둘이 연결되어서 어떻게 통신을 하느냐를 프로그래밍할 때 Socket API를 쓰는 것.
-- Socket API : Berkeley Socket이라고 많이 부른다.
+- Socket API : Berkeley Socket이라고 많이 부른다. Socket을 위한 API.
 
 ## TCP 통신 및 Socket의 정의(참고 : https://www.youtube.com/watch?v=RjW6BeoHhHQ)
 ### TCP 통신이란?
@@ -32,3 +32,5 @@
 3. 서버는 접속 요청을 받아서, 앞서 만든 접속 요청을 받는 소켓이 아닌, "클라이언트와 통신할 소켓"을 따로 또 만든다(Accept)
 4. 소켓을 통해 서로 데이터를 주고 받는다(Send & Receive를 반복)
 5. 통신을 마치면 소켓을 닫는다.(Close. 클라이언트와 서버 둘 중 누구든지 Close를 할 수 있다. Close를 하면 상대방이 "아 얘가 끊었구나" 하고 알 수 있다.)
+
+# HTTP Client

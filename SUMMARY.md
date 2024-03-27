@@ -5,3 +5,5 @@
 * [1주차](/1주차/README.md)
   * [HTTP의 이해](/1주차/HTTP의이해.md)
   * [HTTP Client](/1주차/HTTPClient.md)
+* [2주차](/2주차/README.md)
+  * [REST API](/2주차/RESTAPI.md)
