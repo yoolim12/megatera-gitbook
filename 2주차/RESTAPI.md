@@ -37,4 +37,21 @@
       - 단점 : 정해진 규칙들을 따라야 하기에 효율성 down
       - 대규모 하이퍼미디어 데이터를 주고 받는, 웹에서의 일반적인 경우에는 효과적 BUT 예외적인 경우에는 효과적이지 못할 수 있다.
       - uniform interface가 되기 위해 REST에 4가지 interface 제약 조건들을 걸었다 -> 이것이 필딩 제약 조건
-  6. dd
+      - 필딩 제약 조건(REST라고 할 때는 대개는 필딩 제약 조건을 따르느냐 안 따르느냐를 먼저 본다)
+        - 4가지 인테페이스 제약조건
+          1. Identification of Resources -> URI 등으로 리소스를 식별 가능
+          2. Manipulation of Resources through Representations -> 표현으로 리소스를 조작한다.
+          3. Self-Descriptive Messages - 자기서술적인 메시지를 사용해야 한다.
+          4. HATEOAS(Hypermedia As The Engine Of Application State)
+
+        - 아키텍처 요소에서 리소스와 표현을 구분
+          - Resource
+            - 추상
+            - 모든 시간에 통용되는 엔티티 집합
+            - <객체지향의 사실과 오해> -> "앨리스" 라는 리소스는 키가 커지던, 작아지던 항상 "앨리스" 다.
+            - 즉 값이 변하더라도 그 자체는 변하지 않는다? 라는 뜻인 것 같다.
+          - Representation
+            - 데이터
+
+  6. Layered System - 여러개의 Layer로 구성된다.
+  7. Code-On-Demand
