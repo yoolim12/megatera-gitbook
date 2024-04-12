@@ -15,3 +15,4 @@
   * [DTO](/3주차/DTO.md)
 * [4주차](/4주차/README.md)
   * [Layered Architecture](/4주차/LayeredArchitecture.md)
+  * [Data Access](/4주차/DataAccess.md)

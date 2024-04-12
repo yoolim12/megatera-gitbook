@@ -29,9 +29,20 @@
     - host, port 필요
     - host : IP 주소 또는 도메인 주소
     - Socket socket = new Socket(host, port);
-2. Request
+2. Request 보내기
     - 요청 메시지를 만들어 TCP로 전송
     - GET http://example.com/ HTTP/1.1<br/>(빈 줄)
     - 또는 GET / HTTP/1.1<br/>Host: example.com<br/>(빈 줄)
-    - 
-3. dddd
+    - OutputStream 함수를 생성하여 write 함수를 통해 요청사항을 서버로 전송
+3. Response 받아오기
+    - byte[] 빈 배열을 생성하여, InputStream으로 넘겨서 배열에 데이터를 받아온다.
+    - charBuffer로 받으면 더 편하다.
+    - ** toString()으로 charBuffer를 읽기 전에 charBuffer.flip() 을 꼭 해줄것!! 그래야 제대로 읽을 수 있다!
+4. Close
+    - socket.close()
+    - try-with-resources로도 구현 가능(try-catch 랑은 다른거!)
+      try(Socket socket = new Socket(host, port)){
+        // request
+        // response
+      }
+       
