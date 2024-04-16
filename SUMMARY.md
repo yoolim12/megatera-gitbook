@@ -8,6 +8,7 @@
   * [HTTP의 이해2](/1주차/HTTP의이해2.md)
   * [HTTP Client](/1주차/HTTPClient.md)
   * [HTTP Client2](/1주차/HTTPClient2.md)
+  * [HTTP Server](/1주차/HTTPServer.md)
 * [2주차](/2주차/README.md)
   * [학습 키워드](/2주차/학습키워드.md)
   * [REST API](/2주차/RESTAPI.md)
