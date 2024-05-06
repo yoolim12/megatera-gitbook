@@ -16,7 +16,7 @@
 - Collection Pattern과 HTTP Method를 이용해 CRUD를 표현할 수 X
     1. GET -> Read
     2. POST -> Create
-    3. PUT, PATCH -> Update
+    3. PUT, PATCH -> Update(PUT : 전체를 overwrite / PATCH : 수정한 부분만 업데이트)
     4. DELETE -> Delete
 
 ![alt text](image.png)
