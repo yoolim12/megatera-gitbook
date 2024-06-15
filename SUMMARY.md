@@ -21,6 +21,7 @@
   * [DTO2](/3주차/DTO2.md)
   * [직렬화](/3주차/직렬화.md)
   * [Jackson Object Mapper](/3주차/JacksonObjectMapper.md)
+  * [CORS](/3주차/CORS.md)
 * [4주차](/4주차/README.md)
   * [Layered Architecture](/4주차/LayeredArchitecture.md)
   * [Data Access](/4주차/DataAccess.md)
